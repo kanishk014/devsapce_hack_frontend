@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import ScrollButton from "../scrollToTop";
-import Chatbotbtn from "../../chatbot/Chatbotbtn";
 import "./home.css";
 
 const Home = () => {
@@ -1521,9 +1520,7 @@ const Home = () => {
         </div>
       </section>{" "}
       <ScrollButton scrollState={scrollState} />
-      <div>
-        <Chatbotbtn />
-      </div>
+      
       <Footer />
     </div>
   );
