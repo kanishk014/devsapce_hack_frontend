@@ -1,0 +1,35 @@
+@media (max-width: 1600px) {
+  .adj-height {
+    min-height: 940px;
+  }
+}
+@media (max-width: 1025px) {
+  .adj-height {
+    min-height: 900px;
+  }
+}
+@media (max-width: 768px) {
+  .adj-height {
+    min-height: 845px;
+  }
+}
+
+@media (max-width: 425px) {
+  .adj-height {
+    min-height: 1315px;
+  }
+}
+
+@media (max-width: 375px) {
+  .adj-height {
+    min-height: 1315px;
+  }
+}
+
+@media (max-width: 325px) {
+  .adj-height {
+    min-height: 1525px;
+  }
+}
+
+
