@@ -9,6 +9,8 @@ import Error from "./components/Error/Error";
 import BlogDetail from "./components/Blog/BlogDetail"
 import Login from "./components/Login/Login";
 import AddPost from "./components/AddPost/AddPost";
+import Properties from "./components/Properties/Properties";
+
 import SignUp from "./components/SignUp/SignUp";
 import Meet from './components/jitsimeet/meet'
 import Profile from "./components/Profile/Profile";
@@ -28,6 +30,7 @@ function App() {
 				<Route exact path={"/about"} element={<About />} />
 				<Route exact path={"/blog"} element={<Blog />} />
 				<Route exact path={"/property"} element={<SinglePropertyDetails />} />
+				<Route exact path={"/properties"} element={<Properties />} />
 
 				<Route exact path={"/contactus"} element={<Contact />} />
 				<Route exact path={"/singleproperty"} element={<SingleProperty />} />

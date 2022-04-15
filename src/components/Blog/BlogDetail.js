@@ -88,10 +88,10 @@ const BlogDetail = () => {
 													<li class="theme-cat">
 														<Link to="/blog">
 															<img
-																src="img/theme1.png"
+																src="logo.png"
 																alt="theme"
-																width="31"
-																height="31"
+																width="80"
+																height="70"
 															/>
 															by Admin
 														</Link>

@@ -615,53 +615,7 @@ const Properties = () => {
 														);
 													})}
 												</div>
-												<div class="pagination-style-1">
-													<ul class="pagination">
-														<li class="page-item">
-															<Link
-																class="page-link"
-																to="/properties"
-																aria-label="Previous"
-															>
-																<span aria-hidden="true">&laquo;</span>
-																<span class="sr-only">Previous</span>
-															</Link>
-														</li>
-														<li class="page-item">
-															<Link
-																class="page-link active"
-																to="/properties"
-															>
-																1
-															</Link>
-														</li>
-														<li class="page-item">
-															<Link class="page-link" to="/properties">
-																2
-															</Link>
-														</li>
-														<li class="page-item">
-															<Link class="page-link" to="/properties">
-																3
-															</Link>
-														</li>
-														<li class="page-item">
-															<Link class="page-link" to="/properties">
-																4
-															</Link>
-														</li>
-														<li class="page-item">
-															<Link
-																class="page-link"
-																to="/properties"
-																aria-label="Next"
-															>
-																<span aria-hidden="true">&raquo;</span>
-																<span class="sr-only">Next</span>
-															</Link>
-														</li>
-													</ul>
-												</div>
+												
 											</div>
 										</div>
 									</div>
