@@ -73,7 +73,6 @@ const SignUp = () => {
 				confirmpass: "",
 			});
 			navigate("/activateuser");
-            
 		}
 	}, [success, navigate]);
 	console.log();
@@ -143,7 +142,7 @@ const SignUp = () => {
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item">
-								<a href="index.html">Home</a>
+								<Link to="/">Home</Link>
 							</li>
 							<li class="breadcrumb-item active" aria-current="page">
 								My Account

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
 	deleteProperty,
-	fetchProperty,
 	fetchPropertyForUser,
 	updateProperty,
 } from "../../store/actions/propertiesAction";
@@ -17,17 +16,17 @@ import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { ProgressBar, Button } from "react-bootstrap";
 import ScrollButton from "../scrollToTop";
 const PropListings = () => {
-    	const [scrollState, setScrollState] = useState(false);
-			useEffect(() => {
-				window.addEventListener("scroll", (e) => {
-					var scroll = window.pageYOffset;
-					if (scroll <= 100) {
-						setScrollState(false);
-					} else {
-						setScrollState(true);
-					}
-				});
-			});
+	const [scrollState, setScrollState] = useState(false);
+	useEffect(() => {
+		window.addEventListener("scroll", (e) => {
+			var scroll = window.pageYOffset;
+			if (scroll <= 100) {
+				setScrollState(false);
+			} else {
+				setScrollState(true);
+			}
+		});
+	});
 	const [isClick, setIsClick] = useState(false);
 	const dispatch = useDispatch();
 	const [edit, setEdit] = useState(false);
@@ -66,7 +65,7 @@ const PropListings = () => {
 		ccCam: false,
 		feel_360: "",
 	});
-    console.log(propDetails);
+	console.log(propDetails);
 
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
@@ -75,12 +74,10 @@ const PropListings = () => {
 		(state) => state.fetchUserPropertyReducer
 	);
 
-
 	const { loading, error, userPropertiesData } = fetchUserPropertyReducer;
 	useEffect(() => {
 		dispatch(fetchPropertyForUser(id));
 	}, [dispatch]);
-
 
 	const handleDelete = (currId) => {
 		dispatch(deleteProperty(currId)).then(() => {
@@ -88,10 +85,9 @@ const PropListings = () => {
 		});
 	};
 	const handleEdit = () => {
-		dispatch(updateProperty(data?._id, propDetails)).then(()=>{
-            			dispatch(fetchPropertyForUser(id));
-
-        })
+		dispatch(updateProperty(data?._id, propDetails)).then(() => {
+			dispatch(fetchPropertyForUser(id));
+		});
 	};
 	const iImageHanlder = () => {
 		const storageRef = ref(storage, `property/${iImage.name}`);
@@ -125,7 +121,7 @@ const PropListings = () => {
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item">
-								<a href="/">Home</a>
+								<Link to="/">Home</Link>
 							</li>
 							<li class="breadcrumb-item active" aria-current="page">
 								Property
@@ -232,40 +228,17 @@ const PropListings = () => {
 																				</span>
 																			</div>
 																		</div>
-																		<div class="react-icon">
-																			<ul>
-																				<li>
-																					<Link
-																						to="favourite.html"
-																						data-bs-toggle="tooltip"
-																						data-bs-placement="top"
-																						title="Favourites"
-																					>
-																						<i class="flaticon-heart"></i>
-																					</Link>
-																				</li>
-																				<li>
-																					<Link
-																						to="compare.html"
-																						data-bs-toggle="tooltip"
-																						data-bs-placement="top"
-																						title="Compare"
-																					>
-																						<i class="flaticon-left-and-right-arrows"></i>
-																					</Link>
-																				</li>
-																			</ul>
-																		</div>
+																		
 																	</div>
 																	<div class="item-category10">
-																		<Link to="single-listing1.html">
+																		<Link to="/singleproperty">
 																			{currEle.type}
 																		</Link>
 																	</div>
 																	<div class="item-content">
 																		<div class="verified-area">
 																			<h3 class="item-title">
-																				<Link to="single-listing1.html">
+																				<Link to="/singleproperty">
 																					{currEle.title}
 																				</Link>
 																			</h3>
@@ -1205,53 +1178,7 @@ const PropListings = () => {
 													</Modal.Body>
 												</Modal>
 
-												<div class="pagination-style-1">
-													<ul class="pagination">
-														<li class="page-item">
-															<Link
-																class="page-link"
-																to="with-sidebar2.html"
-																aria-label="Previous"
-															>
-																<span aria-hidden="true">&laquo;</span>
-																<span class="sr-only">Previous</span>
-															</Link>
-														</li>
-														<li class="page-item">
-															<Link
-																class="page-link active"
-																to="with-sidebar2.html"
-															>
-																1
-															</Link>
-														</li>
-														<li class="page-item">
-															<Link class="page-link" to="with-sidebar2.html">
-																2
-															</Link>
-														</li>
-														<li class="page-item">
-															<Link class="page-link" to="with-sidebar2.html">
-																3
-															</Link>
-														</li>
-														<li class="page-item">
-															<Link class="page-link" to="with-sidebar2.html">
-																4
-															</Link>
-														</li>
-														<li class="page-item">
-															<Link
-																class="page-link"
-																to="with-sidebar2.html"
-																aria-label="Next"
-															>
-																<span aria-hidden="true">&raquo;</span>
-																<span class="sr-only">Next</span>
-															</Link>
-														</li>
-													</ul>
-												</div>
+												
 											</div>
 										</div>
 									</div>
