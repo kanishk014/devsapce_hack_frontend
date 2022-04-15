@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import {
 	fetchUserData,
 	updateUser,
-	userRgister,
 } from "../../store/actions/userActions";
 import { Link, useNavigate } from "react-router-dom";
 import { storage } from "../firebase/firebase";
@@ -13,7 +12,6 @@ import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { Button, ProgressBar } from "react-bootstrap";
 import ScrollButton from "../scrollToTop";
 import Message from "../message/message";
-import { async } from "@firebase/util";
 const Profile = () => {
 	const [scrollState, setScrollState] = useState(false);
 	useEffect(() => {
@@ -86,16 +84,11 @@ const Profile = () => {
 	};
 	const nav = () => {
 		setTimeout(() => {
-					// 
                     navigate("/")
 
 		}, 1000);
 	};
-	// useEffect(() => {
-	// 	if (success) {
-	// 		dispatch(fetchUserData(id));
-	// 	}
-	// }, [success, dispatch, id]);
+
 	const changeImage = () => {
 		const storageRef = ref(storage, `users/${details.name}/${iImage.name}`);
 		const uploadTask = uploadBytesResumable(storageRef, iImage);
@@ -178,15 +171,13 @@ const Profile = () => {
 										</div>
 									) : (
 										<form
-											// id="rtcl-Profile-form"
-											// class="form-horizontal"
+										
 											onSubmit={handleSubmit}
 										>
 											{edit && (
 												<div style={{ marginTop: "20px" }}>
 													<label
 														htmlFor="Userimage"
-														// style={{ fontSize: "18px", color: "#309255" }}
 													>
 														Change User Image *
 													</label>
@@ -265,12 +256,7 @@ const Profile = () => {
 													class="form-control"
 													value={userData && userData.email}
 													readOnly
-													// value={userData && userData.email}
-													// onChange={(e) => {
-													// 	setDetails((prev) => {
-													// 		return { ...prev, email: e.target.value };
-													// 	});
-													// }}
+												
 												/>
 											</div>
 
@@ -315,7 +301,6 @@ const Profile = () => {
 															: details.gender === "Male"
 													}
 													onChange={(e) => {
-														// setGender(e.target.value);
 														setDetails((prev) => {
 															return { ...prev, gender: e.target.value };
 														});
@@ -338,7 +323,6 @@ const Profile = () => {
 															: details.gender === "Female"
 													}
 													onChange={(e) => {
-														// setGender(e.target.value);
 
 														setDetails((prev) => {
 															return { ...prev, gender: e.target.value };
@@ -408,7 +392,6 @@ const Profile = () => {
 													<button
 														style={{ background: "#00c194", border: 0 }}
 														className="btn btn-primary btn-hover-dark w-100"
-														// onSubmit={handleSubmit}
 														type="submit"
 													>
 														Save Details

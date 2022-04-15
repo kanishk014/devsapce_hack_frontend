@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import ProgressComponent from "@material-ui/core/CircularProgress";
-import { useNavigate, useParams } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-// import { removeLectureByMeetingId } from "../../store/actions/lecturesAction";
+import { useNavigate } from "react-router-dom";
 function JitsiMeetComponent() {
 	const navigate = useNavigate();
 	const [loading, setLoading] = useState(false);
-	const [name, setName] = useState();
 	const containerStyle = {
 		width: "100vw",
 		height: "100vh",
@@ -14,20 +11,15 @@ function JitsiMeetComponent() {
 		margin: 0,
 		backgroundColor: "#333",
 	};
-	const cId = localStorage.getItem("userInfo")
-		? JSON.parse(localStorage.getItem("userInfo"))._id
-		: null;
-	const { id } = useParams();
+
 	const jitsiContainerStyle = {
 		display: loading ? "none" : "block",
 		width: "100%",
 		height: "100%",
 	};
 
-	const dispatch = useDispatch();
 
-	// console.log();
-	function startConference(name) {
+	function startConference() {
 		try {
 			const domain = "meet.jit.si";
 			const options = {
@@ -56,38 +48,7 @@ function JitsiMeetComponent() {
 					],
 					prejoinPageEnabled: false,
 				},
-				// configOverwrite: {
-				// 	toolbarButtons: [
-				// 		// "microphone",
-				// 		"closedcaptions",
-				// 		"embedmeeting",
-				// 		"fullscreen",
-				// 		"fodeviceselection",
-				// 		"profile",
-				// 		"chat",
-				// 		"recording",
-				// 		"livestreaming",
-				// 		"etherpad",
-				// 		"sharedvideo",
-				// 		// "settings",
-				// 		"raisehand",
-				// 		"videoquality",
-				// 		"filmstrip",
-				// 		// "feedback",
-				// 		"stats",
-				// 		"shortcuts",
-				// 		"tileview",
-				// 		"select-background",
-				// 		"download",
-				// 		"help",
-				// 		"mute-everyone",
-				// 		"mute-video-everyone",
-				// 	],
-				// 	prejoinPageEnabled: false,
-				// 	channelLastN: 4,
-				// 	startWithAudioMuted: true,
-				// 	startWithVideoMuted: true,
-				// },
+				
 			};
 
 			const api = new window.exports.JitsiMeetExternalAPI(domain, options);
@@ -103,7 +64,6 @@ function JitsiMeetComponent() {
 				);
 			});
 			api.addEventListener("readyToClose", function () {
-				//Remove from db
 				navigate("/");
 			});
 		} catch (error) {
@@ -114,7 +74,6 @@ function JitsiMeetComponent() {
 	useEffect(() => {
 		if (window.exports.JitsiMeetExternalAPI) startConference();
 		else alert("Jitsi Meet API script not loaded");
-		// }
 	}, []);
 
 	return (

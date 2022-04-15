@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../message/message";
-import { getRecieverMeetingReducer } from "../../store/reducers/meetReducer";
 import {
-	fetchMeetingCreated,
 	fetchMeetingRecieved,
 } from "../../store/actions/meetingActions";
 const RecievedMeet = () => {
