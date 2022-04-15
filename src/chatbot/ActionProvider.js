@@ -27,9 +27,9 @@ class ActionProvider {
 
   handleProperty() {
     const message = this.createChatbotMessage(
-      "You can find the list of all our properties here:",
-      { widget: "properties" }
-    );
+			"You can find the list of all our properties here: https://vrdoor.netlify.app/properties?category=buy",
+			{ widget: "properties" }
+		);
 
     this.setState((prev) => ({
       ...prev,
