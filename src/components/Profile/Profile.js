@@ -268,6 +268,8 @@ const Profile = () => {
 													readOnly={!edit}
 													type="tel"
 													name="phoneno"
+                                                    maxLength={10}
+                                                    minLength={10}
 													id="phoneno"
 													class="form-control"
 													value={
