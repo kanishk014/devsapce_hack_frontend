@@ -21,9 +21,9 @@ const AddPost = () => {
 					}
 				});
 			});
-	const [formErrors, setFormErrors] = useState({});
 	const [iImage, setiImage] = useState(null);
 	const [iprogress, setIProgress] = useState(0);
+  const [formErrors, setFormErrors] = useState({});
 	const id = localStorage.getItem("userInfo")
 		? JSON.parse(localStorage.getItem("userInfo"))._id
 		: null;
