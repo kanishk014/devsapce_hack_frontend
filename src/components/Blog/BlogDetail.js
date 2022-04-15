@@ -19,34 +19,6 @@ const BlogDetail = () => {
 		<div>
 			<Navbar />
 
-			<div
-				class="rt-header-menu mean-container position-relative"
-				id="meanmenu"
-			>
-				<div class="mean-bar">
-					<Link to="/">
-						<img src="img/logo.svg" alt="logo" class="img-fluid" />
-					</Link>
-					<div class="mean-bar--right">
-						<div class="actions search">
-							<Link to="#template-search" class="item-icon" title="Search">
-								<i class="fas fa-search"></i>
-							</Link>
-						</div>
-						<div class="actions user">
-							<Link to="/profile">
-								<i class="flaticon-user"></i>
-							</Link>
-						</div>
-						<span class="sidebarBtn">
-							<span class="bar"></span>
-							<span class="bar"></span>
-							<span class="bar"></span>
-							<span class="bar"></span>
-						</span>
-					</div>
-				</div>
-			</div>
 			<div class="breadcrumb-wrap">
 				<div class="container">
 					<nav aria-label="breadcrumb">
@@ -62,7 +34,7 @@ const BlogDetail = () => {
 				</div>
 			</div>
 
-			<section class="blog-wrap6">
+			<section class="blog-wrap6" style={{padding:"20px 0"}}>
 				<div class="container">
 					<div class="row gutters-40">
 						<div class="col-lg-8">

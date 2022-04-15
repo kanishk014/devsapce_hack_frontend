@@ -6,19 +6,21 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProperty } from "../../store/actions/propertiesAction";
 import ScrollButton from "../scrollToTop";
+import { Button } from "react-bootstrap";
+import { PersonAddDisabledRounded } from "@mui/icons-material";
 
 const Properties = () => {
-    	const [scrollState, setScrollState] = useState(false);
-			useEffect(() => {
-				window.addEventListener("scroll", (e) => {
-					var scroll = window.pageYOffset;
-					if (scroll <= 100) {
-						setScrollState(false);
-					} else {
-						setScrollState(true);
-					}
-				});
-			});
+	const [scrollState, setScrollState] = useState(false);
+	useEffect(() => {
+		window.addEventListener("scroll", (e) => {
+			var scroll = window.pageYOffset;
+			if (scroll <= 100) {
+				setScrollState(false);
+			} else {
+				setScrollState(true);
+			}
+		});
+	});
 	const [isClick, setIsClick] = useState(false);
 	const [data, setData] = useState();
 	const dispatch = useDispatch();
@@ -28,7 +30,7 @@ const Properties = () => {
 	const [category, setCategory] = useState(
 		window.location.search.split("=")[1]
 	);
-    const navigate=useNavigate()
+	const navigate = useNavigate();
 	console.log(window.location.search);
 
 	const { loading, error, propertiesData } = fetchPropertyReducer;
@@ -132,36 +134,33 @@ const Properties = () => {
 													alignItems: "center",
 												}}
 											>
-												<div class="rld-progress-box">
+												<div class="rld-progress-box" style={{ width: "100%" }}>
 													<div class="main-search-field-3">
 														{/* <!-- Area Range --> */}
-														<div class="price-range-wrapper">
-															<div class="range-box">
+														<div
+															class="price-range-wrapper"
+															style={{ width: "100%" }}
+														>
+															<div class="range-box" style={{ width: "100%" }}>
 																<div class="price-label">Price:</div>
-																<div
-																	id="price-range-filter-4"
-																	class="price-range-filter"
-																></div>
-																<div class="price-filter-wrap d-flex align-items-center">
-																	<div class="price-range-select">
-																		<div class="price-range range-title">$</div>
-																		<div
-																			class="price-range"
-																			id="price-range-min-4"
-																		></div>
-																		<div class="price-range"></div>
-																		<div
-																			class="price-range"
-																			id="price-range-max-4"
-																		></div>
-																	</div>
-																</div>
+
+																<input
+																	type={"text"}
+																	style={{ width: "100%" }}
+																/>
 															</div>
 														</div>
 													</div>
 												</div>
 
-												<div class="filter-button">
+												<div
+													class="filter-button"
+													style={{
+														display: "flex",
+														alignItems: "center",
+														marginLeft: "10px",
+													}}
+												>
 													<div
 														class="dropdown-filter"
 														onClick={() => {
@@ -173,12 +172,21 @@ const Properties = () => {
 															<i class="fas fa-sliders-h"></i>
 														</span>
 													</div>
-													<Link
-														to="/properties"
-														class="filter-btn1 search-btn"
+													<Button
+														style={{
+															background: "#00c194",
+															border: "0 solid #00c194",
+															outline: "0",
+															color: "#fff",
+															display: "flex",
+															alignItems: "center",
+															marginBottom: 0,
+															justifyContent: "center",
+                                                            padding:"13px"
+														}}
 													>
-														Search<i class="fas fa-search"></i>
-													</Link>
+														Search <i style={{marginLeft:"3px"}} aria-setsize={10} class="fas fa-search"></i>
+													</Button>
 												</div>
 												<div
 													class={`explore__form-checkbox-list explore__form-checkbox-list2 full-filter ${
@@ -615,7 +623,6 @@ const Properties = () => {
 														);
 													})}
 												</div>
-												
 											</div>
 										</div>
 									</div>
