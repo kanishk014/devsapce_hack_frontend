@@ -3,9 +3,7 @@ import {
 	FETCH_CREATER_MEET_FAIL,
 	FETCH_CREATER_MEET_REQUEST,
 	FETCH_CREATER_MEET_SUCCESS,
-	FETCH_MEET_FAIL,
-	FETCH_MEET_REQUEST,
-	FETCH_MEET_SUCCESS,
+	
 	FETCH_RECIEVER_MEET_FAIL,
 	FETCH_RECIEVER_MEET_REQUEST,
 	FETCH_RECIEVER_MEET_SUCCESS,
@@ -41,7 +39,6 @@ export const addMeeting = (details) => async (dispatch, getState) => {
 export const fetchMeetingCreated =
 	(createrId) => async (dispatch, getState) => {
 		try {
-			// console.log(educatorInfo);
 			const config = {
 				headers: {
 					"Content-Type": "application/json",
@@ -52,7 +49,6 @@ export const fetchMeetingCreated =
 				`${API_URL}/api/meet/get/${createrId}`,
 				config
 			);
-			// console.log(data);
 			dispatch({ type: FETCH_CREATER_MEET_SUCCESS, payload: data });
 		} catch (e) {
 			dispatch({
@@ -67,7 +63,6 @@ export const fetchMeetingCreated =
 export const fetchMeetingRecieved =
 	(recieverId) => async (dispatch, getState) => {
 		try {
-			// console.log(educatorInfo);
 			const config = {
 				headers: {
 					"Content-Type": "application/json",
@@ -78,7 +73,6 @@ export const fetchMeetingRecieved =
 				`${API_URL}/api/meet/getreciever/${recieverId}`,
 				config
 			);
-			// console.log(data);
 			dispatch({ type: FETCH_RECIEVER_MEET_SUCCESS, payload: data });
 		} catch (e) {
 			dispatch({

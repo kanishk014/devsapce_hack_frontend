@@ -24,12 +24,10 @@ const API_URL = "https://vrdoor-server.herokuapp.com";
 export const addProperty = (details) => async (dispatch, getState) => {
 	console.log("action");
 	try {
-		// const userInfo = getState().educatorAuthReducer.educatorInfo;
-		// console.log(educatorInfo);
+		
 		const config = {
 			headers: {
 				"Content-Type": "application/json",
-				// Authorization: educatorInfo.token,
 			},
 		};
 		dispatch({ type: ADD_PROPERTY_REQUEST });

@@ -7,7 +7,7 @@ import Contact from "./components/Contact/Contact";
 import Agents from "./components/Agents/Agents";
 import Properties from "./components/Properties/Properties";
 import SingleProperty from "./components/SingleProperty/SingleProperty";
-import SingleAgent from "./components/SingleAgent/SingleAgent";
+// import SingleAgent from "./components/SingleAgent/SingleAgent";
 import Error from "./components/Error/Error";
 import BlogDetail from "./components/Blog/BlogDetail"
 import Login from "./components/Login/Login";
@@ -36,7 +36,7 @@ function App() {
 				<Route exact path={"/agents"} element={<Agents />} />
 				<Route exact path={"/properties"} element={<Properties />} />
 				<Route exact path={"/singleproperty"} element={<SingleProperty />} />
-				<Route exact path={"/singleagent"} element={<SingleAgent />} />
+				{/* <Route exact path={"/singleagent"} element={<SingleAgent />} /> */}
 				<Route exact path={"*"} element={<Error />} />
 				<Route exact path={"/blogdetail"} element={<BlogDetail />} />
 				<Route exact path={"/login"} element={<Login />} />
