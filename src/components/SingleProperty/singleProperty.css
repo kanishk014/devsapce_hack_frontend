@@ -1,0 +1,43 @@
+.width-swiper {
+	display: flex;
+	flex: 1;
+	margin: 0;
+}
+
+
+/* @media (width: 1024px) {
+	.width-swiper {
+		width: 119.2px;
+		margin-right: 5px;
+	}
+}
+
+@media (width: 768px) {
+	.width-swiper {
+		width: 135.2px;
+		margin-right: 5px;
+	}
+}
+
+@media (width: 425px) {
+	.width-swiper {
+		width: 76.2px;
+		margin-right: 5px;
+	}
+}
+
+
+@media (width: 375px) {
+	.width-swiper {
+		width: 66.2px;
+		margin-right: 5px;
+	}
+}
+@media (width: 320px) {
+	.width-swiper {
+		width: 55.2px;
+		margin-right: 5px;
+	}
+}
+
+ */
