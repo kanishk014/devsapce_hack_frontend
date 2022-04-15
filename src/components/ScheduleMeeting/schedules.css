@@ -1,0 +1,17 @@
+.property-box2 .item-img{
+    width: fit-content;
+}
+
+.property-box2 .item-content{
+    width: 100%;
+
+}
+.property-box2{
+    width: fit-content;
+}
+
+.container-prop-style{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
