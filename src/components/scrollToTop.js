@@ -1,10 +1,7 @@
 import React from "react";
-import { FiArrowUp } from "react-icons/fi";
 
 function ScrollButton({ scrollState }) {
-    // <a href="javascript:void(0)" id="back-to-top">
-	// 		<i class="fas fa-angle-double-up"></i>
-	// 	</a>;
+  
 	return (
 		<div>
 			{scrollState && (

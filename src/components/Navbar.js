@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import { Dropdown } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { logout } from "../store/actions/userActions";
 import { Avatar } from "@mui/material";
-import { AiOutlineSkype, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineSkype } from "react-icons/ai";
 
 import {
 	FiInstagram,
@@ -14,7 +13,6 @@ import {
 	FiPhoneCall,
 	FiMail,
 	FiArrowLeftCircle,
-	FiLogOut,
 } from "react-icons/fi";
 const Navbar = () => {
 	const dispatch = useDispatch();

@@ -3,9 +3,7 @@ import React from 'react'
 const Error = () => {
   return (
     <div>
-      {/* <!--=====================================-->
-    <!--=   Breadcrumb     Start            =-->
-    <!--=====================================--> */}
+    
 
         <div class="breadcrumb-wrap breadcrumb-wrap-2">
             <div class="container">
@@ -17,9 +15,7 @@ const Error = () => {
                 </nav>
             </div>
         </div>
-    {/* <!--=====================================-->
-    <!--=   Error     Start                 =-->
-    <!--=====================================--> */}
+ 
 
         <section class="error-wrap">
             <div class="container">

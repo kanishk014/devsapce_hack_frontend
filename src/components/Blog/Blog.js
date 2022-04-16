@@ -20,9 +20,7 @@ const Blog = () => {
 		<div>
 			<Navbar />
 
-			{/* <!--=====================================--> */}
-			{/* <!--=   Breadcrumb     Start            =--> */}
-			{/* <!--=====================================--> */}
+		
 
 			<div class="breadcrumb-wrap">
 				<div class="container">
@@ -38,9 +36,7 @@ const Blog = () => {
 					</nav>
 				</div>
 			</div>
-			{/* <!--=====================================--> */}
-			{/* <!--=   Blog     Start                  =--> */}
-			{/* <!--=====================================--> */}
+			
 
 			<section class="blog-wrap5">
 				<div class="container">

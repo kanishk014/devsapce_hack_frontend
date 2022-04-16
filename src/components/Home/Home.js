@@ -170,14 +170,6 @@ const Home = () => {
 																	<select
 																		class="form-select"
 																		aria-label="addcategory"
-																		// onChange={(e) => {
-																		// 	setpropDetails((prev) => {
-																		// 		return {
-																		// 			...prev,
-																		// 			category: e.target.value,
-																		// 		};
-																		// 	});
-																		// }}
 																	>
 																		<option value={1}>1</option>
 																		<option value={2}>2</option>
@@ -187,37 +179,13 @@ const Home = () => {
 																	</select>
 																</div>
 															</div>
-															{/* <div class="form-group">
-																<label
-																	htmlFor="addcategory"
-																	class="control-label"
-																>
-																	Category
-																	<strong class="rtcl-required">*</strong>
-																</label>
-																<select
-																	class="form-select"
-																	aria-label="addcategory"
-																	
-																>
-																	<option value="Rent">Rent</option>
-																	<option value="Buy">Buy</option>
-																</select>
-															</div> */}
+
 															<div class="col-lg-4 col-md-6 py-1 pr-30 pl-0">
 																<div class="form-group bath">
 																	<label class="item-bath">Bathrooms</label>
 																	<select
 																		class="form-select"
 																		aria-label="addcategory"
-																		// onChange={(e) => {
-																		// 	setpropDetails((prev) => {
-																		// 		return {
-																		// 			...prev,
-																		// 			category: e.target.value,
-																		// 		};
-																		// 	});
-																		// }}
 																	>
 																		<option value={1}>1</option>
 																		<option value={2}>2</option>
@@ -233,14 +201,6 @@ const Home = () => {
 																	<select
 																		class="form-select"
 																		aria-label="addcategory"
-																		// onChange={(e) => {
-																		// 	setpropDetails((prev) => {
-																		// 		return {
-																		// 			...prev,
-																		// 			category: e.target.value,
-																		// 		};
-																		// 	});
-																		// }}
 																	>
 																		<option value={1}>1</option>
 																		<option value={2}>2</option>
@@ -1394,7 +1354,6 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-		
 			<section class="banner-collection3">
 				<div class="container">
 					<div class="item-heading-center">

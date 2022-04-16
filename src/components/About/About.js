@@ -23,9 +23,7 @@ const About = () => {
 		<div>
 			<Navbar />
 
-			{/* <!--=====================================--> */}
-			{/* <!--=   Breadcrumb     Start            =--> */}
-			{/* <!--=====================================--> */}
+			
 
 			<div class="breadcrumb-wrap breadcrumb-wrap-2">
 				<div class="container">
@@ -41,10 +39,7 @@ const About = () => {
 					</nav>
 				</div>
 			</div>
-			{/* <!--=====================================--> */}
-			{/* <!--=   About     Start                 =--> */}
-			{/* <!--=====================================--> */}
-
+			
 			<section class="about-wrap2">
 				<div class="container">
 					<div class="row flex-row-reverse flex-lg-row">
@@ -164,9 +159,7 @@ const About = () => {
 					</div>
 				</div>
 			</section>
-			{/* <!--=====================================--> */}
-			{/* <!--=   Property Banner     Start       =--> */}
-			{/* <!--=====================================--> */}
+		
 
 			<section
 				class="property-banner-wrap1 parallaxie"
@@ -202,10 +195,7 @@ const About = () => {
 					</div>
 				</div>
 			</section>
-			{/* <!--=====================================--> */}
-			{/* <!--=   Team     Start                  =--> */}
-			{/* <!--=====================================--> */}
-
+		
 			<section class="team-wrap1 team-wrap2">
 				<div class="container">
 					<div class="item-heading-center mb-20">

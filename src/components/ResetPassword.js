@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { resetPassword } from "../store/actions/userActions";
 import Footer from "./Footer";
 import Message from "./message/message";
@@ -11,7 +11,7 @@ const ResetPassword = () => {
 	const resetToken = window.location.search.split("=")[1];
 	const dispatch = useDispatch();
 	const resetPassReducer = useSelector((state) => state.resetPassReducer);
-	const { loading, error, success } = resetPassReducer;
+	const { loading, error } = resetPassReducer;
 	const [message, setMessage] = useState("");
 	const navigate = useNavigate();
 
