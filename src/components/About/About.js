@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "./about.css";
