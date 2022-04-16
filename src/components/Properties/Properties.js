@@ -182,10 +182,15 @@ const Properties = () => {
 															alignItems: "center",
 															marginBottom: 0,
 															justifyContent: "center",
-                                                            padding:"13px"
+															padding: "13px",
 														}}
 													>
-														Search <i style={{marginLeft:"3px"}} aria-setsize={10} class="fas fa-search"></i>
+														Search{" "}
+														<i
+															style={{ marginLeft: "3px" }}
+															aria-setsize={10}
+															class="fas fa-search"
+														></i>
 													</Button>
 												</div>
 												<div
@@ -289,59 +294,46 @@ const Properties = () => {
 																>
 																	<div class="col-md-6 pl-0">
 																		<div class="price-range-wrapper">
-																			<div class="range-box">
+																			<div
+																				class="range-box"
+																				style={{ marginTop: "10px" }}
+																			>
 																				<div
 																					class="price-label"
-																					style={{ width: "240px" }}
+																					style={{ margin: "0", width: "50%" }}
 																				>
 																					Flat Size:
 																				</div>
-																				<div
-																					id="price-range-filter-5"
-																					class="price-range-filter"
-																				></div>
-																				<div class="price-filter-wrap d-flex align-items-center">
-																					<div class="price-range-select">
-																						<div
-																							class="price-range"
-																							id="price-range-min-5"
-																						></div>
-																						<div class="price-range">-</div>
-																						<div
-																							class="price-range"
-																							id="price-range-max-5"
-																						></div>
-																						<div class="price-range range-title">
-																							sft
-																						</div>
-																					</div>
+																				<input
+																					type={"text"}
+																					style={{
+																						width: "100%",
+																						background: "#fff",
+																					}}
+																				/>
+																				<div class="price-range range-title">
+																					sft
 																				</div>
 																			</div>
 																		</div>
 																	</div>
 																	<div class="col-md-6 pl-0">
 																		<div class="price-range-wrapper">
-																			<div class="range-box">
+																			<div
+																				class="range-box"
+																				style={{ marginTop: "10px" }}
+																			>
+																				{" "}
 																				<div class="price-label">Distance:</div>
-																				<div
-																					id="price-range-filter-6"
-																					class="price-range-filter"
-																				></div>
-																				<div class="price-filter-wrap d-flex align-items-center">
-																					<div class="price-range-select">
-																						<div
-																							class="price-range"
-																							id="price-range-min-6"
-																						></div>
-																						<div class="price-range">-</div>
-																						<div
-																							class="price-range"
-																							id="price-range-max-6"
-																						></div>
-																						<div class="price-range range-title">
-																							km
-																						</div>
-																					</div>
+																				<input
+																					type={"text"}
+																					style={{
+																						width: "100%",
+																						background: "#fff",
+																					}}
+																				/>
+																				<div class="price-range range-title">
+																					km
 																				</div>
 																			</div>
 																		</div>
