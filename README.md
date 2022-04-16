@@ -28,5 +28,4 @@ https://virtual-estate-vrdoor.netlify.app/
 https://github.com/kanishk014/devspace_hack_backend
 
 ## Demo
-https://youtu.be/efSMFchk1pg
 
