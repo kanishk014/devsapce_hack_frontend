@@ -9,45 +9,68 @@ const Footer = () => {
 					<div class="row justify-content-between">
 						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
 							<div class="footer-logo-area footer-logo-area-2">
-
-								<div className="img-container" >
+								<div className="img-container">
 									<img
-                                    style={{height:"50px",marginBottom:"20px"}}
+										style={{ height: "50px", marginBottom: "20px" }}
 										src="img/logo.png"
-									height={100}
+										height={100}
 										alt="logo"
 										class="img-fluid"
 									/>
 								</div>
 								<p>
-								VRDOOR is India's fastest growing online Property marketplace to buy, sell, and rent residential and commercial properties. Experience every property in 360 view, VRDOOR is the most preferred real estate portal in India by various independent surveys.
+									VRDOOR is India's fastest growing online Property marketplace
+									to buy, sell, and rent residential and commercial properties.
+									Experience every property in 360 view, VRDOOR is the most
+									preferred real estate portal in India by various independent
+									surveys.
 								</p>
 								<div class="item-social">
 									<ul>
 										<li>
-											<Link to="https://www.facebook.com/" target="_blank"  rel="noreferrer" >
+											<a
+												href="https://www.facebook.com/"
+												target="_blank"
+												rel="noreferrer"
+											>
 												<i class="fab fa-facebook-f"></i>
-											</Link> 
+											</a>
 										</li>
 										<li>
-											<Link to="https://twitter.com/" target="_blank"  rel="noreferrer">
+											<a
+												href="https://twitter.com/"
+												target="_blank"
+												rel="noreferrer"
+											>
 												<i class="fab fa-twitter"></i>
-											</Link> 
+											</a>
 										</li>
 										<li>
-											<Link to="https://vimeo.com/" target="_blank"  rel="noreferrer">
+											<a
+												href="https://vimeo.com/"
+												target="_blank"
+												rel="noreferrer"
+											>
 												<i class="fab fa-vimeo-v"></i>
-											</Link> 
+											</a>
 										</li>
 										<li>
-											<Link to="https://www.pinterest.com/" target="_blank"  rel="noreferrer">
+											<a
+												href="https://www.pinterest.com/"
+												target="_blank"
+												rel="noreferrer"
+											>
 												<i class="fab fa-pinterest-p"></i>
-											</Link> 
+											</a>
 										</li>
 										<li>
-											<Link to="https://web.whatsapp.com/" target="_blank"  rel="noreferrer">
+											<a
+												href="https://web.whatsapp.com/"
+												target="_blank"
+												rel="noreferrer"
+											>
 												<i class="fab fa-whatsapp"></i>
-											</Link> 
+											</a>
 										</li>
 									</ul>
 								</div>
@@ -61,19 +84,19 @@ const Footer = () => {
 								<div class="item-link">
 									<ul>
 										<li>
-											<Link to="about">About Us </Link> 
+											<Link to="/about">About Us </Link>
 										</li>
 										<li>
-											<Link to="Blog">Blogs & Articles </Link> 
+											<Link to="/Blog">Blogs & Articles </Link>
 										</li>
 										<li>
-											<Link to="about">Terms & Conditions</Link> 
+											<Link to="/about">Terms & Conditions</Link>
 										</li>
 										<li>
-											<Link to="about">Privacy Policy </Link> 
+											<Link to="/about">Privacy Policy </Link>
 										</li>
 										<li>
-											<Link to="contactus">Contact Us </Link> 
+											<Link to="/contactus">Contact Us </Link>
 										</li>
 									</ul>
 								</div>
@@ -88,103 +111,157 @@ const Footer = () => {
 									<ul>
 										<li>
 											<div class="item-img">
-												<Link to="https://www.instagram.com/" class="insta-pic">
+												<a
+													href="https://www.instagram.com/"
+													target="_blank"
+													rel="noreferrer"
+													class="insta-pic"
+												>
 													<img
 														src="img/instagram/insta1.jpg"
 														width="86"
 														height="73"
 														alt="instagram"
 													/>
-												</Link> 
+												</a>
 												<div class="item-overlay">
-													<Link to="https://www.instagram.com/" target="_blank"  rel="noreferrer">
+													<a
+														href="https://www.instagram.com/"
+														target="_blank"
+														rel="noreferrer"
+													>
 														<i class="fab fa-instagram"></i>
-													</Link> 
+													</a>
 												</div>
 											</div>
 										</li>
 										<li>
 											<div class="item-img">
-												<Link to="https://www.instagram.com/" class="insta-pic">
+												<a
+													href="https://www.instagram.com/"
+													target="_blank"
+													rel="noreferrer"
+													class="insta-pic"
+												>
 													<img
 														src="img/instagram/insta2.jpg"
 														width="86"
 														height="73"
 														alt="instagram"
 													/>
-												</Link> 
+												</a>
 												<div class="item-overlay">
-													<Link to="https://www.instagram.com/" target="_blank"  rel="noreferrer">
+													<a
+														href="https://www.instagram.com/"
+														target="_blank"
+														rel="noreferrer"
+													>
 														<i class="fab fa-instagram"></i>
-													</Link> 
+													</a>
 												</div>
 											</div>
 										</li>
 										<li>
 											<div class="item-img">
-												<Link to="https://www.instagram.com/" class="insta-pic">
+												<a
+													href="https://www.instagram.com/"
+													target="_blank"
+													rel="noreferrer"
+													class="insta-pic"
+												>
 													<img
 														src="img/instagram/insta3.jpg"
 														width="86"
 														height="73"
 														alt="instagram"
 													/>
-												</Link> 
+												</a>
 												<div class="item-overlay">
-													<Link to="https://www.instagram.com/" target="_blank"  rel="noreferrer">
+													<a
+														href="https://www.instagram.com/"
+														target="_blank"
+														rel="noreferrer"
+													>
 														<i class="fab fa-instagram"></i>
-													</Link> 
+													</a>
 												</div>
 											</div>
 										</li>
 										<li>
 											<div class="item-img">
-												<Link to="https://www.instagram.com/" class="insta-pic">
+												<a
+													href="https://www.instagram.com/"
+													target="_blank"
+													rel="noreferrer"
+													class="insta-pic"
+												>
 													<img
 														src="img/instagram/insta4.jpg"
 														width="86"
 														height="73"
 														alt="instagram"
 													/>
-												</Link> 
+												</a>
 												<div class="item-overlay">
-													<Link to="https://www.instagram.com/" target="_blank"  rel="noreferrer">
+													<a
+														href="https://www.instagram.com/"
+														target="_blank"
+														rel="noreferrer"
+													>
 														<i class="fab fa-instagram"></i>
-													</Link> 
+													</a>
 												</div>
 											</div>
 										</li>
 										<li>
 											<div class="item-img">
-												<Link to="https://www.instagram.com/" class="insta-pic">
+												<a
+													href="https://www.instagram.com/"
+													target="_blank"
+													rel="noreferrer"
+													class="insta-pic"
+												>
 													<img
 														src="img/instagram/insta5.jpg"
 														width="86"
 														height="73"
 														alt="instagram"
 													/>
-												</Link> 
+												</a>
 												<div class="item-overlay">
-													<Link to="https://www.instagram.com/" target="_blank"  rel="noreferrer">
+													<a
+														href="https://www.instagram.com/"
+														target="_blank"
+														rel="noreferrer"
+													>
 														<i class="fab fa-instagram"></i>
-													</Link> 
+													</a>
 												</div>
 											</div>
 										</li>
 										<li>
 											<div class="item-img">
-												<Link to="https://www.instagram.com/" class="insta-pic">
+												<a
+													href="https://www.instagram.com/"
+													target="_blank"
+													rel="noreferrer"
+													class="insta-pic"
+												>
 													<img
 														src="img/instagram/insta6.jpg"
 														width="86"
 														height="73"
 														alt="instagram"
 													/>
-												</Link> 
+												</a>
 												<div class="item-overlay">
-													<Link to="https://www.instagram.com/" target="_blank"  rel="noreferrer">
+													<a
+														href="https://www.instagram.com/"
+														target="_blank"
+														rel="noreferrer"
+													>
 														<i class="fab fa-instagram"></i>
-													</Link> 
+													</a>
 												</div>
 											</div>
 										</li>
@@ -200,17 +277,18 @@ const Footer = () => {
 								<div class="footer-location">
 									<ul>
 										<li class="item-map">
-											<i class="fas fa-map-marker-alt"></i>Indra vihar, Delhi- 110009
+											<i class="fas fa-map-marker-alt"></i>Indra vihar, Delhi-
+											110009
 										</li>
 										<li>
-											<Link to="mailto:info@example.com">
+											<a href="mailto:info@example.com">
 												<i class="fas fa-envelope"></i>info@example.com
-											</Link> 
+											</a>
 										</li>
 										<li>
-											<Link to="tel:+123596000">
+											<a href="tel:+123596000">
 												<i class="fas fa-phone-alt"></i>+91 8826024495
-											</Link> 
+											</a>
 										</li>
 									</ul>
 								</div>
@@ -226,10 +304,10 @@ const Footer = () => {
 							<div class="copyright-area1">
 								<ul>
 									<li>
-										<Link to="about">Terms of Use</Link> 
+										<Link to="/about">Terms of Use</Link>
 									</li>
 									<li>
-										<Link to="about">Privacy Policy</Link> 
+										<Link to="/about">Privacy Policy</Link>
 									</li>
 								</ul>
 							</div>
