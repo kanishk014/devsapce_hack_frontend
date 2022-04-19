@@ -228,7 +228,6 @@ const PropListings = () => {
 																				</span>
 																			</div>
 																		</div>
-																		
 																	</div>
 																	<div class="item-category10">
 																		<Link to="/singleproperty">
@@ -635,7 +634,11 @@ const PropListings = () => {
 																									class="form-check-input"
 																									type="checkbox"
 																									readOnly={!edit}
-																									style={{ marginRight: "5px" }}
+																									style={{
+																										marginRight: "5px",
+																										backgroundColor: "#00c194",
+																										border: "0",
+																									}}
 																									id="tvcable"
 																									checked={
 																										edit
@@ -671,7 +674,11 @@ const PropListings = () => {
 																								<input
 																									class="form-check-input"
 																									type="checkbox"
-																									style={{ marginRight: "8px" }}
+																									style={{
+																										marginRight: "5px",
+																										backgroundColor: "#00c194",
+																										border: "0",
+																									}}
 																									id="barbeque"
 																									readOnly={!edit}
 																									checked={
@@ -708,8 +715,11 @@ const PropListings = () => {
 																								<input
 																									class="form-check-input"
 																									type="checkbox"
-																									style={{ marginRight: "5px" }}
-																									id="ac"
+	style={{
+																										marginRight: "5px",
+																										backgroundColor: "#00c194",
+																										border: "0",
+																									}}																									id="ac"
 																									readOnly={!edit}
 																									checked={
 																										edit
@@ -749,7 +759,11 @@ const PropListings = () => {
 																								<input
 																									class="form-check-input"
 																									type="checkbox"
-																									style={{ marginRight: "5px" }}
+																									style={{
+																										marginRight: "5px",
+																										backgroundColor: "#00c194",
+																										border: "0",
+																									}}
 																									readOnly={!edit}
 																									id="lawn"
 																									checked={
@@ -785,7 +799,11 @@ const PropListings = () => {
 																								<input
 																									class="form-check-input"
 																									type="checkbox"
-																									style={{ marginRight: "5px" }}
+																									style={{
+																										marginRight: "5px",
+																										backgroundColor: "#00c194",
+																										border: "0",
+																									}}
 																									id="laundry"
 																									readOnly={!edit}
 																									checked={
@@ -822,7 +840,11 @@ const PropListings = () => {
 																								<input
 																									class="form-check-input"
 																									type="checkbox"
-																									style={{ marginRight: "5px" }}
+																									style={{
+																										marginRight: "5px",
+																										backgroundColor: "#00c194",
+																										border: "0",
+																									}}
 																									id="cctv"
 																									readOnly={!edit}
 																									checked={
@@ -1177,8 +1199,6 @@ const PropListings = () => {
 														)}
 													</Modal.Body>
 												</Modal>
-
-												
 											</div>
 										</div>
 									</div>

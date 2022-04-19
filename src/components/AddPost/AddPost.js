@@ -362,6 +362,10 @@ const AddPost = () => {
 															<input
 																class="form-check-input"
 																type="checkbox"
+																style={{
+																	backgroundColor: "#00c194",
+																	border: "0",
+																}}
 																id="tvcable"
 																value={propDetails.tvCable}
 																onChange={(e) => {
@@ -381,6 +385,10 @@ const AddPost = () => {
 													<div class="col-sm">
 														<div class="form-check form-switch">
 															<input
+																style={{
+																	backgroundColor: "#00c194",
+																	border: "0",
+																}}
 																class="form-check-input"
 																type="checkbox"
 																id="barbeque"
@@ -402,6 +410,10 @@ const AddPost = () => {
 													<div class="col-sm">
 														<div class="form-check form-switch">
 															<input
+																style={{
+																	backgroundColor: "#00c194",
+																	border: "0",
+																}}
 																class="form-check-input"
 																type="checkbox"
 																id="ac"
@@ -424,6 +436,10 @@ const AddPost = () => {
 													<div class="col-sm">
 														<div class="form-check form-switch">
 															<input
+																style={{
+																	backgroundColor: "#00c194",
+																	border: "0",
+																}}
 																class="form-check-input"
 																type="checkbox"
 																id="lawn"
@@ -442,6 +458,10 @@ const AddPost = () => {
 													<div class="col-sm">
 														<div class="form-check form-switch">
 															<input
+																style={{
+																	backgroundColor: "#00c194",
+																	border: "0",
+																}}
 																class="form-check-input"
 																type="checkbox"
 																id="laundry"
@@ -463,6 +483,10 @@ const AddPost = () => {
 													<div class="col-sm">
 														<div class="form-check form-switch">
 															<input
+																style={{
+																	backgroundColor: "#00c194",
+																	border: "0",
+																}}
 																class="form-check-input"
 																type="checkbox"
 																id="cctv"

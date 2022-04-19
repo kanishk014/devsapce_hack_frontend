@@ -25,7 +25,7 @@ const Login = () => {
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
 	const loginUser = useSelector((state) => state.loginUser);
-	const { laoding, userInfo, error, success } = loginUser;
+	const { loading, userInfo, error, success } = loginUser;
 
 	const loginHandle = (e) => {
 		e.preventDefault();
@@ -70,7 +70,7 @@ const Login = () => {
 								<div class="col-md-12 rtcl-login-form-wrap">
 									<h2>Login</h2>
 									{error && (<Message variant={"danger"}>{error}</Message>)}
-									{laoding ? (
+									{loading ? (
 										<div
 											class="container-fluid"
 											style={{
