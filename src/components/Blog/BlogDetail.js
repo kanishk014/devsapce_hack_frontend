@@ -27,14 +27,17 @@ const BlogDetail = () => {
 								<Link to="/">Home</Link>
 							</li>
 							<li class="breadcrumb-item active" aria-current="page">
-								Blogs
+								<Link to="/blog"> Blog</Link>
+							</li>
+							<li class="breadcrumb-item active" aria-current="page">
+								Details{" "}
 							</li>
 						</ol>
 					</nav>
 				</div>
 			</div>
 
-			<section class="blog-wrap6" style={{padding:"20px 0"}}>
+			<section class="blog-wrap6" style={{ padding: "20px 0" }}>
 				<div class="container">
 					<div class="row gutters-40">
 						<div class="col-lg-8">
@@ -85,26 +88,58 @@ const BlogDetail = () => {
 											<div class="heading-title title-style-2">
 												<h3>
 													<Link to="/blogdetail">
-													Indian Real Estate Industry
+														Indian Real Estate Industry
 													</Link>
 												</h3>
 												<p>
-												Real estate sector is one of the most globally recognized sectors. It comprises of four sub sectors - housing, retail, hospitality, and commercial. The growth of this sector is well complemented by the growth in the corporate environment and the demand for office space as well as urban and semi-urban accommodations. The construction industry ranks third among the 14 major sectors in terms of direct, indirect and induced effects in all sectors of the economy.
-
-In India, the real estate sector is the second-highest employment generator, after the agriculture sector. It is also expected that this sector will incur more non-resident Indian (NRI) investment, both in the short term and the long term. Bengaluru is expected to be the most favoured property investment destination for NRIs, followed by Ahmedabad, Pune, Chennai, Goa, Delhi and Dehradun.
+													Real estate sector is one of the most globally
+													recognized sectors. It comprises of four sub sectors -
+													housing, retail, hospitality, and commercial. The
+													growth of this sector is well complemented by the
+													growth in the corporate environment and the demand for
+													office space as well as urban and semi-urban
+													accommodations. The construction industry ranks third
+													among the 14 major sectors in terms of direct,
+													indirect and induced effects in all sectors of the
+													economy. In India, the real estate sector is the
+													second-highest employment generator, after the
+													agriculture sector. It is also expected that this
+													sector will incur more non-resident Indian (NRI)
+													investment, both in the short term and the long term.
+													Bengaluru is expected to be the most favoured property
+													investment destination for NRIs, followed by
+													Ahmedabad, Pune, Chennai, Goa, Delhi and Dehradun.
 												</p>
 											</div>
 											<div class="quotation-style">
 												<blockquote class="item-quotation">
-												By 2040, real estate market will grow to Rs. 65,000 crore (US$ 9.30 billion) from Rs. 12,000 crore (US$ 1.72 billion) in 2019. Real estate sector in India is expected to reach US$ 1 trillion in market size by 2030, up from US$ 200 billion in 2021 and contribute 13% to the country’s GDP by 2025. Retail, hospitality, and commercial real estate are also growing significantly, providing the much-needed infrastructure for India's growing needs.
-
-As per ICRA estimates, Indian firms are expected to raise Rs. 3.5 trillion (US$ 48 billion) through infrastructure and real estate investment trusts in 2022, as compared with raised funds worth US$ 29 billion to date.
+													By 2040, real estate market will grow to Rs. 65,000
+													crore (US$ 9.30 billion) from Rs. 12,000 crore (US$
+													1.72 billion) in 2019. Real estate sector in India is
+													expected to reach US$ 1 trillion in market size by
+													2030, up from US$ 200 billion in 2021 and contribute
+													13% to the country’s GDP by 2025. Retail, hospitality,
+													and commercial real estate are also growing
+													significantly, providing the much-needed
+													infrastructure for India's growing needs. As per ICRA
+													estimates, Indian firms are expected to raise Rs. 3.5
+													trillion (US$ 48 billion) through infrastructure and
+													real estate investment trusts in 2022, as compared
+													with raised funds worth US$ 29 billion to date.
 												</blockquote>
 											</div>
 											<p class="style-2">
-											The office market in top eight cities recorded transactions of 22.2 msf from July 2020 to December 2020, whereas new completions were recorded at 17.2 msf in the same period. In terms of share of sectoral occupiers, Information Technology (IT/ITeS) sector dominated with a 41% share in second half of 2020, followed by BSFI and Manufacturing sectors with 16% each, while Other Services and Co-working sectors recorded 17% and 10%, respectively.
-
-According to Savills India, real estate demand for data centres is expected to increase by 15-18 million sq. ft. by 2025.
+												The office market in top eight cities recorded
+												transactions of 22.2 msf from July 2020 to December
+												2020, whereas new completions were recorded at 17.2 msf
+												in the same period. In terms of share of sectoral
+												occupiers, Information Technology (IT/ITeS) sector
+												dominated with a 41% share in second half of 2020,
+												followed by BSFI and Manufacturing sectors with 16%
+												each, while Other Services and Co-working sectors
+												recorded 17% and 10%, respectively. According to Savills
+												India, real estate demand for data centres is expected
+												to increase by 15-18 million sq. ft. by 2025.
 											</p>
 											<div class="row gutters-10">
 												<div class="col-lg-6 col-md-6 col-sm-6">
@@ -162,7 +197,11 @@ According to Savills India, real estate demand for data centres is expected to i
 												</ul>
 											</div>
 											<p class="style-2 style-4">
-											In 2020, the manufacturing sector accounted for 24% of office space leasing at 5.7 million square feet. SMEs and electronic component manufacturers leased the most between Pune, Chennai and Delhi NCR, followed by auto sector leasing in Chennai, Ahmedabad and Pune. 
+												In 2020, the manufacturing sector accounted for 24% of
+												office space leasing at 5.7 million square feet. SMEs
+												and electronic component manufacturers leased the most
+												between Pune, Chennai and Delhi NCR, followed by auto
+												sector leasing in Chennai, Ahmedabad and Pune.
 											</p>
 										</div>
 									</div>

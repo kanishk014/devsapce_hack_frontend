@@ -27,7 +27,6 @@ const PropListings = () => {
 			}
 		});
 	});
-	const [isClick, setIsClick] = useState(false);
 	const dispatch = useDispatch();
 	const [edit, setEdit] = useState(false);
 
@@ -68,7 +67,6 @@ const PropListings = () => {
 	console.log(propDetails);
 
 	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
 
 	const fetchUserPropertyReducer = useSelector(
 		(state) => state.fetchUserPropertyReducer
@@ -319,8 +317,7 @@ const PropListings = () => {
 																				/>
 																				Delete
 																			</Button>
-																			{/* <FiEdit size={20} className="icon" />
-																			<FiTrash2 size={20} className="icon" /> */}
+																		
 																		</div>
 																	</div>
 																</div>
@@ -330,7 +327,7 @@ const PropListings = () => {
 												</div>
 												<Modal
 													show={show}
-													onHide={handleClose} // {...props}
+													onHide={handleClose} 
 													size="lg"
 													aria-labelledby="contained-modal-title-vcenter"
 													centered
@@ -346,11 +343,9 @@ const PropListings = () => {
 																<div class="col-lg-12 col-sm-12 col-12">
 																	<div class="page-content-block">
 																		<div class="col-md-12 rtcl-login-form-wrap">
-																			{/* <h2>Add Property</h2> */}
 																			<form
 																				id="postadd"
 																				class="form-horizontal"
-																				// onSubmit={addPostHandler}
 																			>
 																				<div class="form-group">
 																					<label
@@ -513,7 +508,6 @@ const PropListings = () => {
 																					/>
 																				</div>
 																				<p style={{ color: "red" }}>
-																					{/* {formErrors.title}  */}
 																				</p>
 																				<div class="form-group">
 																					<label
@@ -548,7 +542,6 @@ const PropListings = () => {
 																					/>
 																				</div>
 																				<p style={{ color: "red" }}>
-																					{/* {formErrors.overview} */}
 																				</p>
 																				<div class="form-group">
 																					<label
@@ -583,7 +576,6 @@ const PropListings = () => {
 																					/>
 																				</div>
 																				<p style={{ color: "red" }}>
-																					{/* {formErrors.location} */}
 																				</p>
 																				<div class="form-group">
 																					<label
@@ -618,7 +610,6 @@ const PropListings = () => {
 																					/>
 																				</div>
 																				<p style={{ color: "red" }}>
-																					{/* {formErrors.price} */}
 																				</p>
 																				<div class="container">
 																					<div class="row">
@@ -715,11 +706,12 @@ const PropListings = () => {
 																								<input
 																									class="form-check-input"
 																									type="checkbox"
-	style={{
+																									style={{
 																										marginRight: "5px",
 																										backgroundColor: "#00c194",
 																										border: "0",
-																									}}																									id="ac"
+																									}}
+																									id="ac"
 																									readOnly={!edit}
 																									checked={
 																										edit

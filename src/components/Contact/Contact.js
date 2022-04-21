@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import ScrollButton from "../scrollToTop";
-
+import './Contact.css'
 const Contact = () => {
     	const [scrollState, setScrollState] = useState(false);
 			useEffect(() => {
@@ -35,7 +35,7 @@ const Contact = () => {
 				</div>
 			</div>
 
-			<section class="contact-wrap">
+			<section class="contact-wrap" style={{padding:"30px 0"}}>
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
@@ -68,49 +68,49 @@ const Contact = () => {
 										<div class="item-lebel">Social Share :</div>
 										<ul class="item-social">
 											<li>
-												<Link
-													to="https://www.facebook.com/"
+												<a
+													href="https://www.facebook.com/"
 													target="_blank"
 													rel="noreferrer"
 												>
 													<i class="fab fa-facebook-f"></i>
-												</Link>
+												</a>
 											</li>
 											<li>
-												<Link
-													to="https://twitter.com/"
+												<a
+													href="https://twitter.com/"
 													target="_blank"
 													rel="noreferrer"
 												>
 													<i class="fab fa-twitter"></i>
-												</Link>
+												</a>
 											</li>
 											<li>
-												<Link
-													to="https://vimeo.com/"
+												<a
+													href="https://vimeo.com/"
 													target="_blank"
 													rel="noreferrer"
 												>
 													<i class="fab fa-vimeo-v"></i>
-												</Link>
+												</a>
 											</li>
 											<li>
-												<Link
-													to="https://www.pinterest.com/"
+												<a
+													href="https://www.pinterest.com/"
 													target="_blank"
 													rel="noreferrer"
 												>
 													<i class="fab fa-pinterest-p"></i>
-												</Link>
+												</a>
 											</li>
 											<li>
-												<Link
-													to="https://web.whatsapp.com/"
+												<a
+													href="https://web.whatsapp.com/"
 													target="_blank"
 													rel="noreferrer"
 												>
 													<i class="fab fa-whatsapp"></i>
-												</Link>
+												</a>
 											</li>
 										</ul>
 										<div class="item-icon">

@@ -24,7 +24,11 @@ const Home = () => {
 	return (
 		<div style={{ width: "100%" }}>
 			<Navbar />
-			<section class="main-banner-wrap1 main-banner-wrap6 motion-effects-wrap adj-height">
+			<section
+				class={`main-banner-wrap1 main-banner-wrap6  motion-effects-wrap ${
+					isclick ? "adj-height " : "adj-ht"
+				}`}
+			>
 				<div class="shape-element">
 					<ul>
 						<li>
@@ -428,7 +432,7 @@ const Home = () => {
 									</div>
 									<p class="item-para wow fadeInUp" data-wow-delay=".4s">
 										We’ve more than
-										<span class="banner-p">54,000</span> apartments, place &
+										<span class="banner-p">{" "}54,000</span> apartments, place &
 										plot.
 										<span class="item-shape">
 											<img
@@ -490,16 +494,6 @@ const Home = () => {
 													title="Favourites"
 												>
 													<i class="flaticon-heart"></i>
-												</Link>
-											</li>
-											<li>
-												<Link
-													to="/"
-													data-bs-toggle="tooltip"
-													data-bs-placement="top"
-													title="Compare"
-												>
-													<i class="flaticon-left-and-right-arrows"></i>
 												</Link>
 											</li>
 										</ul>
@@ -568,16 +562,6 @@ const Home = () => {
 													title="Favourites"
 												>
 													<i class="flaticon-heart"></i>
-												</Link>
-											</li>
-											<li>
-												<Link
-													to="/"
-													data-bs-toggle="tooltip"
-													data-bs-placement="top"
-													title="Compare"
-												>
-													<i class="flaticon-left-and-right-arrows"></i>
 												</Link>
 											</li>
 										</ul>
@@ -650,16 +634,6 @@ const Home = () => {
 													<i class="flaticon-heart"></i>
 												</Link>
 											</li>
-											<li>
-												<Link
-													to="/"
-													data-bs-toggle="tooltip"
-													data-bs-placement="top"
-													title="Compare"
-												>
-													<i class="flaticon-left-and-right-arrows"></i>
-												</Link>
-											</li>
 										</ul>
 									</div>
 								</div>
@@ -728,16 +702,6 @@ const Home = () => {
 													title="Favourites"
 												>
 													<i class="flaticon-heart"></i>
-												</Link>
-											</li>
-											<li>
-												<Link
-													to="/"
-													data-bs-toggle="tooltip"
-													data-bs-placement="top"
-													title="Compare"
-												>
-													<i class="flaticon-left-and-right-arrows"></i>
 												</Link>
 											</li>
 										</ul>
@@ -810,16 +774,6 @@ const Home = () => {
 													<i class="flaticon-heart"></i>
 												</Link>
 											</li>
-											<li>
-												<Link
-													to="/"
-													data-bs-toggle="tooltip"
-													data-bs-placement="top"
-													title="Compare"
-												>
-													<i class="flaticon-left-and-right-arrows"></i>
-												</Link>
-											</li>
 										</ul>
 									</div>
 								</div>
@@ -886,16 +840,6 @@ const Home = () => {
 													title="Favourites"
 												>
 													<i class="flaticon-heart"></i>
-												</Link>
-											</li>
-											<li>
-												<Link
-													to="/"
-													data-bs-toggle="tooltip"
-													data-bs-placement="top"
-													title="Compare"
-												>
-													<i class="flaticon-left-and-right-arrows"></i>
 												</Link>
 											</li>
 										</ul>

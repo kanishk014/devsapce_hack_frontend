@@ -43,10 +43,7 @@ const SingleProperty = () => {
 		<div>
 			<Navbar />
 
-			{/* <!--=====================================-->
-      <!--=   Breadcrumb     Start            =-->
-      <!--=====================================--> */}
-
+		
 			<div class="breadcrumb-wrap">
 				<div class="container">
 					<nav aria-label="breadcrumb">
@@ -55,20 +52,18 @@ const SingleProperty = () => {
 								<Link to="/">Home</Link>
 							</li>
 							<li class="breadcrumb-item">
-								<Link to="/singlelisting">Comercial Property</Link>
+								<Link to="/singlelisting">Property</Link>
 							</li>
 							<li class="breadcrumb-item active" aria-current="page">
-								All Listing
+								Details{" "}
 							</li>
 						</ol>
 					</nav>
 				</div>
 			</div>
-			{/* <!--=====================================-->
-      <!--=   Single Listing     Start        =-->
-      <!--=====================================--> */}
+	
 
-			<section class="single-listing-wrap1">
+			<section class="single-listing-wrap1" style={{ padding: "30px 0" }}>
 				{loading ? (
 					<div
 						class="container-fluid"
@@ -952,7 +947,9 @@ const SingleProperty = () => {
 												</div>
 												<ul class="wid-contact-button">
 													<li>
-														<Link to={`/schedulemeeting?id=${propertyDetails?.userId}`}>
+														<Link
+															to={`/schedulemeeting?id=${propertyDetails?.userId}`}
+														>
 															<i class="fas fa-comment"></i>Schedule Meeting
 														</Link>
 													</li>
@@ -1217,9 +1214,7 @@ const SingleProperty = () => {
 					</div>
 				)}
 			</section>
-			{/* <!--=====================================-->
-      <!--=   Property     Start              =-->
-      <!--=====================================--> */}
+		
 
 			<section class="property-wrap1">
 				<div class="container">
@@ -1407,10 +1402,7 @@ const SingleProperty = () => {
 					</div>
 				</div>
 			</section>
-			{/* <!--=====================================-->
-      <!--=   Newsletter     Start            =-->
-      <!--=====================================--> */}
-
+		
 			<section class="newsletter-wrap1">
 				<div class="shape-img1">
 					<img

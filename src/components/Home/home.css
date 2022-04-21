@@ -1,12 +1,14 @@
+.adj-ht{
+    min-height: 780px;
+}
 @media (max-width: 1600px) {
   .adj-height {
-    min-height: 940px;
+    min-height: 900px;
   }
 }
 @media (max-width: 1025px) {
   .adj-height {
-    min-height: 900px;
-  }
+    min-height: 850px;  }
 }
 @media (max-width: 768px) {
   .adj-height {
@@ -33,3 +35,17 @@
 }
 
 
+
+/* .dropdown-filter span{
+    display: flex;
+    justify-content: center;
+    width: fit-content !important;
+}
+.dropdown-filter {
+    display: flex;
+    justify-content: center;
+    width: fit-content  !important;
+} */
+.main-banner-box6 .banner-search-wrap .item-para {
+    color: #00c194;
+}

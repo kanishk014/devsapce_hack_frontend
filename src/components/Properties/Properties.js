@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
-import Data from "../../Apis/propertiesApi";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProperty } from "../../store/actions/propertiesAction";
 import ScrollButton from "../scrollToTop";
 import { Button } from "react-bootstrap";
-import { PersonAddDisabledRounded } from "@mui/icons-material";
 
 const Properties = () => {
 	const [scrollState, setScrollState] = useState(false);
@@ -22,7 +20,6 @@ const Properties = () => {
 		});
 	});
 	const [isClick, setIsClick] = useState(false);
-	const [data, setData] = useState();
 	const dispatch = useDispatch();
 	const fetchPropertyReducer = useSelector(
 		(state) => state.fetchPropertyReducer
@@ -74,7 +71,6 @@ const Properties = () => {
 						<div class="row">
 							<div class="col-xl-6">
 								<form
-									action="https://radiustheme.com/demo/html/homlisti//properties"
 									class="map-form"
 								>
 									<input
@@ -136,7 +132,6 @@ const Properties = () => {
 											>
 												<div class="rld-progress-box" style={{ width: "100%" }}>
 													<div class="main-search-field-3">
-														{/* <!-- Area Range --> */}
 														<div
 															class="price-range-wrapper"
 															style={{ width: "100%" }}
@@ -203,7 +198,6 @@ const Properties = () => {
 															class="col-lg-4 col-md-6 py-1 pr-30 pl-0"
 															style={{ width: "100%" }}
 														>
-															{/* <!-- Form Property Status --> */}
 															<div class="form-group bed">
 																<label class="item-bedrooms">Bedrooms</label>
 																<div
@@ -220,13 +214,11 @@ const Properties = () => {
 																		</li>
 																	</ul>
 																</div>
-																{/* <!--/ End Form Property Status --> */}
 															</div>
 															<div
 																class="col-lg-4 col-md-6 py-1 pr-30 pl-0 "
 																style={{ width: "100%" }}
 															>
-																{/* <!-- Form Bedrooms --> */}
 																<div class="form-group bath">
 																	<label class="item-bath">Bathrooms</label>
 																	<div
@@ -250,13 +242,11 @@ const Properties = () => {
 																		</ul>
 																	</div>
 																</div>
-																{/* <!--/ End Form Bedrooms --> */}
 															</div>
 															<div
 																class="col-lg-4 col-md-6 py-1 pl-0 pr-0"
 																style={{ width: "100%" }}
 															>
-																{/* <!-- Form Bathrooms --> */}
 																<div class="form-group garage">
 																	<label class="item-garage">Garage</label>
 																	<div
@@ -280,11 +270,8 @@ const Properties = () => {
 																		</ul>
 																	</div>
 																</div>
-																{/* <!--/ End Form Bathrooms --> */}
 															</div>
-															{/* <!-- Price Fields --> */}
 															<div class="main-search-field-2 col-12">
-																{/* <!-- Area Range --> */}
 																<div
 																	class="row"
 																	style={{
@@ -340,7 +327,6 @@ const Properties = () => {
 																	</div>
 																</div>
 															</div>
-															{/* <!-- row --> */}
 															<div class="row">
 																<div class="col-lg-12 col-md-12 col-sm-12 mt-3">
 																	<h4 class="text-dark">Amenities</h4>
@@ -474,9 +460,7 @@ const Properties = () => {
 																	</ul>
 																</div>
 															</div>
-															{/* <!-- /row --> */}
 														</div>
-														{/* <!-- /row --> */}
 														<div
 															class="filter-button"
 															style={{ justifyContent: "center" }}
@@ -496,7 +480,6 @@ const Properties = () => {
 											</div>
 										</div>
 									</div>
-									{/* <!--/ End Search Form --> */}
 								</div>
 								<div class="property-wrap3">
 									<div class="row justify-content-center">
