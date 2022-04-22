@@ -103,7 +103,7 @@ const ScheduleMeeting = () => {
 				</div>
 			</div>
 
-			<main class="site-main content-area">
+			<main class="site-main content-area" style={{padding:"30px 0"}}>
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-sm-12 col-12">

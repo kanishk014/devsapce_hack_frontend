@@ -65,9 +65,7 @@ const SingleProperty = () => {
 		<div>
 			<Navbar />
 
-			{/* <!--=====================================-->
-      <!--=   Breadcrumb     Start            =-->
-      <!--=====================================--> */}
+		
 
 			<div class="breadcrumb-wrap">
 				<div class="container">
@@ -86,11 +84,9 @@ const SingleProperty = () => {
 					</nav>
 				</div>
 			</div>
-			{/* <!--=====================================-->
-      <!--=   Single Listing     Start        =-->
-      <!--=====================================--> */}
+		
 
-			<section class="single-listing-wrap1">
+			<section class="single-listing-wrap1" style={{padding:"30px 0px"}}>
 				<div class="container">
 					<div class="single-property">
 						<div class="content-wrapper">
@@ -994,7 +990,7 @@ const SingleProperty = () => {
 									<div class="widget widget-listing-box1">
 										<h3 class="widget-subtitle">Latest Listing</h3>
 										<div class="item-img">
-											<Link to="/singlelisting">
+											<Link to="/singleproperty">
 												<img
 													src="img/blog/widget1.jpg"
 													alt="widget"
@@ -1008,10 +1004,10 @@ const SingleProperty = () => {
 										</div>
 										<div class="widget-content">
 											<div class="item-category10">
-												<Link to="/singlelisting">Villa</Link>
+												<Link to="/singleproperty">Villa</Link>
 											</div>
 											<h4 class="item-title">
-												<Link to="/singlelisting">
+												<Link to="/singleproperty">
 													Modern Villa for House Highland Ave Los Angeles
 												</Link>
 											</h4>
@@ -1025,7 +1021,7 @@ const SingleProperty = () => {
 										</div>
 										<div class="widget-listing">
 											<div class="item-img">
-												<Link to="/singlelisting">
+												<Link to="/singleproperty">
 													<img
 														src="img/blog/widget2.jpg"
 														alt="widget"
@@ -1036,7 +1032,7 @@ const SingleProperty = () => {
 											</div>
 											<div class="item-content">
 												<h5 class="item-title">
-													<Link to="/singlelisting">
+													<Link to="/singleproperty">
 														House Highland Ave Los Angeles
 													</Link>
 												</h5>
@@ -1050,7 +1046,7 @@ const SingleProperty = () => {
 										</div>
 										<div class="widget-listing">
 											<div class="item-img">
-												<Link to="/singlelisting">
+												<Link to="/singleproperty">
 													<img
 														src="img/blog/widget3.jpg"
 														alt="widget"
@@ -1061,7 +1057,7 @@ const SingleProperty = () => {
 											</div>
 											<div class="item-content">
 												<h5 class="item-title">
-													<Link to="/singlelisting">
+													<Link to="/singleproperty">
 														House Highland Ave Los Angeles
 													</Link>
 												</h5>
@@ -1075,7 +1071,7 @@ const SingleProperty = () => {
 										</div>
 										<div class="widget-listing no-brd">
 											<div class="item-img">
-												<Link to="/singlelisting">
+												<Link to="/singleproperty">
 													<img
 														src="img/blog/widget4.jpg"
 														alt="widget"
@@ -1086,7 +1082,7 @@ const SingleProperty = () => {
 											</div>
 											<div class="item-content">
 												<h5 class="item-title">
-													<Link to="/singlelisting">
+													<Link to="/singleproperty">
 														House Highland Ave Los Angeles
 													</Link>
 												</h5>
@@ -1226,9 +1222,7 @@ const SingleProperty = () => {
 					</div>
 				</div>
 			</section>
-			{/* <!--=====================================-->
-      <!--=   Property     Start              =-->
-      <!--=====================================--> */}
+		
 
 			<section class="property-wrap1">
 				<div class="container">
@@ -1416,9 +1410,7 @@ const SingleProperty = () => {
 					</div>
 				</div>
 			</section>
-			{/* <!--=====================================-->
-      <!--=   Newsletter     Start            =-->
-      <!--=====================================--> */}
+	
 
 			<section class="newsletter-wrap1">
 				<div class="shape-img1">
