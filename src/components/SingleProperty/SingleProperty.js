@@ -127,26 +127,13 @@ const SingleProperty = () => {
 									<div class="col-lg-4 col-md-12">
 										<div class="side-button">
 											<ul>
-												<li>
-													<Link to="/properties?category=buy?category=buy" class="side-btn">
-														<i class="flaticon-share"></i>
-													</Link>
-												</li>
+											
 												<li>
 													<Link to="/properties?category=buy?category=buy" class="side-btn">
 														<i class="flaticon-heart"></i>
 													</Link>
 												</li>
-												<li>
-													<Link to="/properties?category=buy?category=buy" class="side-btn">
-														<i class="flaticon-left-and-right-arrows"></i>
-													</Link>
-												</li>
-												<li>
-													<Link to="/properties?category=buy?category=buy" class="side-btn">
-														<i class="flaticon-printer"></i>
-													</Link>
-												</li>
+												
 											</ul>
 										</div>
 									</div>

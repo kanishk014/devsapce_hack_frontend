@@ -223,44 +223,37 @@ const About = () => {
 									</Link>
 									<ul class="team-social-1">
 										<li class="social-item">
-											<Link
-												to="https://radiustheme.com/"
-												target="_blank"
-												rel="noreferrer"
-												class="social-hover-icon social-link"
-											>
-												<i class="fas fa-share-alt"></i>
-											</Link>
+											
 											<ul class="team-social-dropdown">
 												<li class="social-item">
-													<Link
-														to="https://www.facebook.com/"
+													<a
+														href="https://www.facebook.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-facebook-f"></i>
-													</Link>
+													</a>
 												</li>
 												<li class="social-item">
-													<Link
-														to="https://twitter.com/"
+													<a
+														href="https://twitter.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-twitter"></i>
-													</Link>
+													</a>
 												</li>
 												<li class="social-item">
-													<Link
-														to="https://www.linkedin.com/"
+													<a
+														href="https://www.linkedin.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-linkedin-in"></i>
-													</Link>
+													</a>
 												</li>
 											</ul>
 										</li>
@@ -292,44 +285,37 @@ const About = () => {
 									</Link>
 									<ul class="team-social-1">
 										<li class="social-item">
-											<Link
-												to="https://radiustheme.com/"
-												target="_blank"
-												rel="noreferrer"
-												class="social-hover-icon social-link"
-											>
-												<i class="fas fa-share-alt"></i>
-											</Link>
+											
 											<ul class="team-social-dropdown">
 												<li class="social-item">
-													<Link
-														to="https://www.facebook.com/"
+													<a
+														href="https://www.facebook.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-facebook-f"></i>
-													</Link>
+													</a>
 												</li>
 												<li class="social-item">
-													<Link
-														to="https://twitter.com/"
+													<a
+														href="https://twitter.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-twitter"></i>
-													</Link>
+													</a>
 												</li>
 												<li class="social-item">
-													<Link
-														to="https://www.linkedin.com/"
+													<a
+														href="https://www.linkedin.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-linkedin-in"></i>
-													</Link>
+													</a>
 												</li>
 											</ul>
 										</li>
@@ -361,44 +347,37 @@ const About = () => {
 									</Link>
 									<ul class="team-social-1">
 										<li class="social-item">
-											<Link
-												to="https://radiustheme.com/"
-												target="_blank"
-												rel="noreferrer"
-												class="social-hover-icon social-link"
-											>
-												<i class="fas fa-share-alt"></i>
-											</Link>
+											
 											<ul class="team-social-dropdown">
 												<li class="social-item">
-													<Link
-														to="https://www.facebook.com/"
+													<a
+														href="https://www.facebook.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-facebook-f"></i>
-													</Link>
+													</a>
 												</li>
 												<li class="social-item">
-													<Link
-														to="https://twitter.com/"
+													<a
+														href="https://twitter.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-twitter"></i>
-													</Link>
+													</a>
 												</li>
 												<li class="social-item">
-													<Link
-														to="https://www.linkedin.com/"
+													<a
+														href="https://www.linkedin.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-linkedin-in"></i>
-													</Link>
+													</a>
 												</li>
 											</ul>
 										</li>
@@ -430,44 +409,37 @@ const About = () => {
 									</Link>
 									<ul class="team-social-1">
 										<li class="social-item">
-											<Link
-												to="https://radiustheme.com/"
-												target="_blank"
-												rel="noreferrer"
-												class="social-hover-icon social-link"
-											>
-												<i class="fas fa-share-alt"></i>
-											</Link>
+											
 											<ul class="team-social-dropdown">
 												<li class="social-item">
-													<Link
-														to="https://www.facebook.com/"
+													<a
+														href="https://www.facebook.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-facebook-f"></i>
-													</Link>
+													</a>
 												</li>
 												<li class="social-item">
-													<Link
-														to="https://twitter.com/"
+													<a
+														href="https://twitter.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-twitter"></i>
-													</Link>
+													</a>
 												</li>
 												<li class="social-item">
-													<Link
-														to="https://www.linkedin.com/"
+													<a
+														href="https://www.linkedin.com/"
 														target="_blank"
 														rel="noreferrer"
 														class="social-link"
 													>
 														<i class="fab fa-linkedin-in"></i>
-													</Link>
+													</a>
 												</li>
 											</ul>
 										</li>
