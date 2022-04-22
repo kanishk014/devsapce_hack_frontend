@@ -65,8 +65,6 @@ const SingleProperty = () => {
 		<div>
 			<Navbar />
 
-		
-
 			<div class="breadcrumb-wrap">
 				<div class="container">
 					<nav aria-label="breadcrumb">
@@ -75,7 +73,7 @@ const SingleProperty = () => {
 								<Link to="/">Home</Link>
 							</li>
 							<li class="breadcrumb-item">
-								<Link to="/properties?category=buy">Property</Link>
+								<Link to="/properties?category=buy?category=buy">Property</Link>
 							</li>
 							<li class="breadcrumb-item active" aria-current="page">
 								Details
@@ -84,9 +82,8 @@ const SingleProperty = () => {
 					</nav>
 				</div>
 			</div>
-		
 
-			<section class="single-listing-wrap1" style={{padding:"30px 0px"}}>
+			<section class="single-listing-wrap1" style={{ padding: "30px 0px" }}>
 				<div class="container">
 					<div class="single-property">
 						<div class="content-wrapper">
@@ -106,7 +103,9 @@ const SingleProperty = () => {
 										<div class="single-verified-area">
 											<div class="item-title">
 												<h3>
-													<Link to="/properties">Family House For Rent</Link>
+													<Link to="/properties?category=buy?category=buy">
+														Family House For Rent
+													</Link>
 												</h3>
 											</div>
 										</div>
@@ -129,22 +128,22 @@ const SingleProperty = () => {
 										<div class="side-button">
 											<ul>
 												<li>
-													<Link to="/properties" class="side-btn">
+													<Link to="/properties?category=buy?category=buy" class="side-btn">
 														<i class="flaticon-share"></i>
 													</Link>
 												</li>
 												<li>
-													<Link to="/properties" class="side-btn">
+													<Link to="/properties?category=buy?category=buy" class="side-btn">
 														<i class="flaticon-heart"></i>
 													</Link>
 												</li>
 												<li>
-													<Link to="/properties" class="side-btn">
+													<Link to="/properties?category=buy?category=buy" class="side-btn">
 														<i class="flaticon-left-and-right-arrows"></i>
 													</Link>
 												</li>
 												<li>
-													<Link to="/properties" class="side-btn">
+													<Link to="/properties?category=buy?category=buy" class="side-btn">
 														<i class="flaticon-printer"></i>
 													</Link>
 												</li>
@@ -576,14 +575,16 @@ const SingleProperty = () => {
 												/>
 												<div class="play-button">
 													<div class="item-icon">
-														<Link
-															to="http://www.youtube.com/watch?v=1iIZeIy7TqM"
+														<a
+															href="http://www.youtube.com/watch?v=1iIZeIy7TqM"
+															target={"_blank"}
+															rel="noreferrer"
 															class="play-btn play-btn-big"
 														>
 															<span class="play-icon style-2">
 																<i class="fas fa-play"></i>
 															</span>
-														</Link>
+														</a>
 													</div>
 												</div>
 											</div>
@@ -1210,7 +1211,7 @@ const SingleProperty = () => {
 											<h4 class="item-title">Find Your Dream House</h4>
 											<div class="item-price">$2,999</div>
 											<div class="post-button">
-												<Link to="/properties" class="item-btn">
+												<Link to="/properties?category=buy?category=buy" class="item-btn">
 													Shop Now
 												</Link>
 											</div>
@@ -1222,7 +1223,6 @@ const SingleProperty = () => {
 					</div>
 				</div>
 			</section>
-		
 
 			<section class="property-wrap1">
 				<div class="container">
@@ -1238,7 +1238,10 @@ const SingleProperty = () => {
 						</div>
 						<div class="col-lg-6 col-md-5 col-sm-5">
 							<div class="heading-button">
-								<Link to="/properties" class="heading-btn item-btn2">
+								<Link
+									to="/properties?category=buy?category=buy"
+									class="heading-btn item-btn2"
+								>
 									All Properties
 								</Link>
 							</div>
@@ -1251,7 +1254,7 @@ const SingleProperty = () => {
 								data-wow-delay=".3s"
 							>
 								<div class="item-img">
-									<Link to="/properties">
+									<Link to="/properties?category=buy?category=buy">
 										<img
 											src="img/blog/blog4.jpg"
 											alt="blog"
@@ -1272,12 +1275,12 @@ const SingleProperty = () => {
 									</div>
 								</div>
 								<div class="item-category10">
-									<Link to="/properties">Appartment</Link>
+									<Link to="/properties?category=buy">Appartment</Link>
 								</div>
 								<div class="item-content">
 									<div class="verified-area">
 										<h3 class="item-title">
-											<Link to="/properties">Family House For Sell</Link>
+											<Link to="/properties?category=buy">Family House For Sell</Link>
 										</h3>
 									</div>
 									<div class="location-area">
@@ -1305,7 +1308,7 @@ const SingleProperty = () => {
 								data-wow-delay=".2s"
 							>
 								<div class="item-img">
-									<Link to="/properties">
+									<Link to="/properties?category=buy">
 										<img
 											src="img/blog/blog5.jpg"
 											alt="blog"
@@ -1326,12 +1329,12 @@ const SingleProperty = () => {
 									</div>
 								</div>
 								<div class="item-category10">
-									<Link to="/properties">Villa</Link>
+									<Link to="/properties?category=buy">Villa</Link>
 								</div>
 								<div class="item-content">
 									<div class="verified-area">
 										<h3 class="item-title">
-											<Link to="/properties">Countryside Modern Lake View</Link>
+											<Link to="/properties?category=buy">Countryside Modern Lake View</Link>
 										</h3>
 									</div>
 									<div class="location-area">
@@ -1359,7 +1362,7 @@ const SingleProperty = () => {
 								data-wow-delay=".1s"
 							>
 								<div class="item-img">
-									<Link to="/properties">
+									<Link to="/properties?category=buy">
 										<img
 											src="img/blog/blog6.jpg"
 											alt="blog"
@@ -1380,12 +1383,12 @@ const SingleProperty = () => {
 									</div>
 								</div>
 								<div class="item-category10">
-									<Link to="/properties">Office</Link>
+									<Link to="/properties?category=buy">Office</Link>
 								</div>
 								<div class="item-content">
 									<div class="verified-area">
 										<h3 class="item-title">
-											<Link to="/properties">Gorgeous Apartment Building </Link>
+											<Link to="/properties?category=buy">Gorgeous Apartment Building </Link>
 										</h3>
 									</div>
 									<div class="location-area">
@@ -1410,7 +1413,6 @@ const SingleProperty = () => {
 					</div>
 				</div>
 			</section>
-	
 
 			<section class="newsletter-wrap1">
 				<div class="shape-img1">

@@ -70,9 +70,7 @@ const Properties = () => {
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-xl-6">
-								<form
-									class="map-form"
-								>
+								<form class="map-form">
 									<input
 										type="text"
 										class="form-control"
@@ -465,7 +463,10 @@ const Properties = () => {
 															class="filter-button"
 															style={{ justifyContent: "center" }}
 														>
-															<Link to="/properties" class="filter-btn1">
+															<Link
+																to="/properties?category=buy"
+																class="filter-btn1"
+															>
 																Apply Filter
 															</Link>
 															<Link

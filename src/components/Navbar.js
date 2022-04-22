@@ -225,8 +225,11 @@ const Navbar = () => {
 								color="#00c194"
 								style={{ marginRight: "10px" }}
 							/>
-							<a style={{ marginTop: 0,color:"black" }} href="mailto:address@gmail.com">
-								{user?.email?user?.email:"info@example.com"}{" "}
+							<a
+								style={{ marginTop: 0, color: "black" }}
+								href="mailto:address@gmail.com"
+							>
+								{user?.email ? user?.email : "info@example.com"}{" "}
 							</a>
 						</p>
 					</div>
@@ -242,7 +245,13 @@ const Navbar = () => {
 								}}
 							></Avatar>
 						) : (
-							<ul style={{display:"flex",justifyContent:"space-around",width:"100%"}}>
+							<ul
+								style={{
+									display: "flex",
+									justifyContent: "space-around",
+									width: "100%",
+								}}
+							>
 								<li>
 									<Link className="sign-in" to="/login">
 										Sign In
@@ -333,7 +342,9 @@ const Navbar = () => {
 									</Link>
 									<ul class="main-menu__dropdown sub-menu">
 										<li>
-											<Link to="/Properties">Properties Map Grid</Link>
+											<Link to="/properties?category=buy">
+												Properties Map Grid
+											</Link>
 										</li>
 
 										<li>
