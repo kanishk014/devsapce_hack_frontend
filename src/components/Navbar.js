@@ -14,7 +14,7 @@ import {
 	FiMail,
 	FiArrowLeftCircle,
 } from "react-icons/fi";
-const Navbar = () => {
+const Navbar = ({ scrollState }) => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const [click, setClick] = useState(false);
@@ -25,10 +25,10 @@ const Navbar = () => {
 	const id = localStorage.getItem("userInfo")
 		? JSON.parse(localStorage.getItem("userInfo"))._id
 		: null;
-    const user = localStorage.getItem("userInfo")
-			? JSON.parse(localStorage.getItem("userInfo"))
-			: null;
-         
+	const user = localStorage.getItem("userInfo")
+		? JSON.parse(localStorage.getItem("userInfo"))
+		: null;
+
 	let link;
 	let link2;
 	if (!id) {

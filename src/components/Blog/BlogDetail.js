@@ -5,7 +5,10 @@ import Navbar from "../Navbar";
 import ScrollButton from "../scrollToTop";
 const BlogDetail = () => {
 	const [scrollState, setScrollState] = useState(false);
+  
 	useEffect(() => {
+        			window.scrollTo(0, 0);
+
 		window.addEventListener("scroll", (e) => {
 			var scroll = window.pageYOffset;
 			if (scroll <= 100) {

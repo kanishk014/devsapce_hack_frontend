@@ -8,7 +8,13 @@ import "./home.css";
 
 const Home = () => {
 	const [scrollState, setScrollState] = useState(false);
+//    window.onbeforeunload = function () {
+// 			window.scrollTo(0, 0);
+// 		};
 	useEffect(() => {
+		// window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		// };
 		window.addEventListener("scroll", (e) => {
 			var scroll = window.pageYOffset;
 			if (scroll <= 100) {
@@ -432,7 +438,7 @@ const Home = () => {
 									</div>
 									<p class="item-para wow fadeInUp" data-wow-delay=".4s">
 										We’ve more than
-										<span class="banner-p">{" "}54,000</span> apartments, place &
+										<span class="banner-p"> 54,000</span> apartments, place &
 										plot.
 										<span class="item-shape">
 											<img

@@ -6,7 +6,10 @@ import ScrollButton from "../scrollToTop";
 import './Contact.css'
 const Contact = () => {
     	const [scrollState, setScrollState] = useState(false);
+          
 			useEffect(() => {
+                			window.scrollTo(0, 0);
+
 				window.addEventListener("scroll", (e) => {
 					var scroll = window.pageYOffset;
 					if (scroll <= 100) {

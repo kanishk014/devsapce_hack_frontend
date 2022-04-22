@@ -10,7 +10,7 @@ import BlogDetail from "./components/Blog/BlogDetail"
 import Login from "./components/Login/Login";
 import AddPost from "./components/AddPost/AddPost";
 import Properties from "./components/Properties/Properties";
-
+import Policy from './components/Policy/Policy'
 import SignUp from "./components/SignUp/SignUp";
 import Meet from './components/jitsimeet/meet'
 import Profile from "./components/Profile/Profile";
@@ -48,6 +48,8 @@ function App() {
 				<Route exact path={"/forgotPassword"} element={<ForgetPassword />} />
 				<Route exact path={"/schedulemeeting"} element={<ScheduleMeeting />} />
 				<Route exact path={"/schedule"} element={<Schedule />} />
+				<Route exact path={"/policy"} element={<Policy />} />
+
 				<Route exact path={"/scheduledmeetings"} element={<RecievedMeet />} />
 			</Routes>
 		</Router>

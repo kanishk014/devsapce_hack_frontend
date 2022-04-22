@@ -128,7 +128,7 @@ const PropListings = () => {
 					</nav>
 				</div>
 			</div>
-			<section class="half-map-wrap1" style={{ padding: "30px 0px 30px 0px" }}>
+			<section class="half-map-wrap1" style={{padding:0}} >
 				{loading ? (
 					<div
 						class="container-fluid"

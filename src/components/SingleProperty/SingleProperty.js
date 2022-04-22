@@ -63,7 +63,7 @@ const SingleProperty = () => {
 
 	return (
 		<div>
-			<Navbar />
+			<Navbar scrollState={scrollState} />
 
 			<div class="breadcrumb-wrap">
 				<div class="container">
@@ -127,13 +127,14 @@ const SingleProperty = () => {
 									<div class="col-lg-4 col-md-12">
 										<div class="side-button">
 											<ul>
-											
 												<li>
-													<Link to="/properties?category=buy?category=buy" class="side-btn">
+													<Link
+														to="/properties?category=buy?category=buy"
+														class="side-btn"
+													>
 														<i class="flaticon-heart"></i>
 													</Link>
 												</li>
-												
 											</ul>
 										</div>
 									</div>
@@ -1198,7 +1199,10 @@ const SingleProperty = () => {
 											<h4 class="item-title">Find Your Dream House</h4>
 											<div class="item-price">$2,999</div>
 											<div class="post-button">
-												<Link to="/properties?category=buy?category=buy" class="item-btn">
+												<Link
+													to="/properties?category=buy?category=buy"
+													class="item-btn"
+												>
 													Shop Now
 												</Link>
 											</div>
@@ -1267,7 +1271,9 @@ const SingleProperty = () => {
 								<div class="item-content">
 									<div class="verified-area">
 										<h3 class="item-title">
-											<Link to="/properties?category=buy">Family House For Sell</Link>
+											<Link to="/properties?category=buy">
+												Family House For Sell
+											</Link>
 										</h3>
 									</div>
 									<div class="location-area">
@@ -1321,7 +1327,9 @@ const SingleProperty = () => {
 								<div class="item-content">
 									<div class="verified-area">
 										<h3 class="item-title">
-											<Link to="/properties?category=buy">Countryside Modern Lake View</Link>
+											<Link to="/properties?category=buy">
+												Countryside Modern Lake View
+											</Link>
 										</h3>
 									</div>
 									<div class="location-area">
@@ -1375,7 +1383,9 @@ const SingleProperty = () => {
 								<div class="item-content">
 									<div class="verified-area">
 										<h3 class="item-title">
-											<Link to="/properties?category=buy">Gorgeous Apartment Building </Link>
+											<Link to="/properties?category=buy">
+												Gorgeous Apartment Building{" "}
+											</Link>
 										</h3>
 									</div>
 									<div class="location-area">
