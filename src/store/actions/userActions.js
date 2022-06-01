@@ -21,6 +21,8 @@ import {
 } from "../constants/constants";
 import axios from "axios";
 const API_URL = "https://vrdoor-server.herokuapp.com";
+// const API_URL = "http://localhost:4000";
+
 export const userRgister = (details) => async (dispatch) => {
 	console.log(details);
 	try {

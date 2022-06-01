@@ -234,6 +234,7 @@ const SignUp = () => {
 													name="Instructor"
 													accept=".jpg,.jpeg,.png"
 													// alt='courseImg'
+													value={details.userImage}
 													style={{ marginTop: "10px" }}
 													// required
 													placeholder="User image"
@@ -298,7 +299,8 @@ const SignUp = () => {
 												<input
 													type="radio"
 													name="gender"
-													value={details.gender}
+													checked={details.gender === "Male"}
+													// value={details.gender}
 													onChange={(e) => {
 														setDetails((prev) => {
 															return { ...prev, gender: "Male" };
@@ -311,7 +313,8 @@ const SignUp = () => {
 												<input
 													type="radio"
 													name="gender"
-													value={details.gender}
+													checked={details.gender === "Female"}
+													// value={details.gender}
 													onChange={(e) => {
 														setDetails((prev) => {
 															return { ...prev, gender: "Female" };
@@ -324,7 +327,8 @@ const SignUp = () => {
 												<input
 													type="radio"
 													name="gender"
-													value={details.gender}
+													// value={details.gender}
+													checked={details.gender === "Other"}
 													onChange={(e) => {
 														setDetails((prev) => {
 															return { ...prev, gender: "Other" };

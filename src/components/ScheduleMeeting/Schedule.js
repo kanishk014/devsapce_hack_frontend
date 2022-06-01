@@ -21,6 +21,8 @@ const Schedule = () => {
 	const { meetCreateData, loading, error, success } = getCreaterMeetingReducer;
 
 	useEffect(() => {
+        			window.scrollTo(0, 0);
+
 		// if (success) {
 			dispatch(fetchMeetingCreated(cId));
 		// }

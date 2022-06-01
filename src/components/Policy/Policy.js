@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import "./Policy.css";
 import { Link } from "react-router-dom";
 
 function PrivacyPolicy() {
+    useEffect(()=>{
+			window.scrollTo(0, 0);
+
+    })
 	return (
 		<>
 			<Navbar scrollState={true} />

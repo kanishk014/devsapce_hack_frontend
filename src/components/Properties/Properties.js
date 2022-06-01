@@ -10,6 +10,8 @@ import { Button } from "react-bootstrap";
 const Properties = () => {
 	const [scrollState, setScrollState] = useState(false);
 	useEffect(() => {
+        			window.scrollTo(0, 0);
+
 		window.addEventListener("scroll", (e) => {
 			var scroll = window.pageYOffset;
 			if (scroll <= 100) {
@@ -180,8 +182,8 @@ const Properties = () => {
 													>
 														Search{" "}
 														<i
-															style={{ marginLeft: "3px" }}
-															aria-setsize={10}
+															style={{ marginLeft: "10px" }}
+															aria-setsize={5}
 															class="fas fa-search"
 														></i>
 													</Button>
